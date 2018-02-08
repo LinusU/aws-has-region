@@ -1,0 +1,15 @@
+{
+  "name": "aws-has-region",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/aws-has-region",
+  "scripts": {
+    "test": "standard"
+  },
+  "peerDependencies": {
+    "aws-sdk": ">=2.0.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
