@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "license": "MIT",
   "repository": "LinusU/aws-has-region",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && node test"
   },
   "peerDependencies": {
-    "aws-sdk": ">=2.0.0"
+    "@aws-sdk/config-resolver": "^3.0.0",
+    "@aws-sdk/node-config-provider": "^3.0.0"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "@aws-sdk/config-resolver": "^3.23.0",
+    "@aws-sdk/node-config-provider": "^3.23.0",
+    "standard": "^16.0.3",
+    "ts-readme-generator": "^0.6.0"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "standard": {
+    "ignore": "test.js"
   }
 }

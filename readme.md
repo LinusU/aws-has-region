@@ -11,10 +11,10 @@ npm install --save aws-has-region
 ## Usage
 
 ```js
-const awsHasRegion = require('aws-has-region')
+import awsHasRegion, { errorText } from 'aws-has-region'
 
-if (!awsHasRegion()) {
-  console.error(awsHasRegion.errorText)
+if (!(await awsHasRegion())) {
+  console.error(errorText)
   process.exit(1)
 }
 
@@ -23,10 +23,14 @@ if (!awsHasRegion()) {
 
 ## API
 
-### `awsHasRegion() => boolean`
+### `awsHasRegion()`
+
+- returns `Promise<boolean>`
 
 Returns true if the AWS SDK region config is set, otherwise false.
 
-### `awsHasRegion.errorText`
+### `errorText`
+
+- type: `string`
 
 A error message that can be printed if the region is not set.
