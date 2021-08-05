@@ -2,6 +2,6 @@ declare namespace awsHasRegion {
   const errorText: string
 }
 
-declare function awsHasRegion (): boolean
+declare function awsHasRegion (): Promise<boolean>
 
 export = awsHasRegion

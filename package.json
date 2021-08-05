@@ -7,7 +7,8 @@
     "test": "standard"
   },
   "peerDependencies": {
-    "aws-sdk": ">=2.0.0"
+    "@aws-sdk/config-resolver": "^3.0.0",
+    "@aws-sdk/node-config-provider": "^3.0.0"
   },
   "devDependencies": {
     "standard": "^16.0.3"
