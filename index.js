@@ -1,5 +1,5 @@
-import { NODE_REGION_CONFIG_FILE_OPTIONS, NODE_REGION_CONFIG_OPTIONS } from '@aws-sdk/config-resolver'
-import { loadConfig } from '@aws-sdk/node-config-provider'
+import { NODE_REGION_CONFIG_FILE_OPTIONS, NODE_REGION_CONFIG_OPTIONS } from '@smithy/config-resolver'
+import { loadConfig } from '@smithy/node-config-provider'
 
 export default function awsHasRegion () {
   const provider = loadConfig(NODE_REGION_CONFIG_OPTIONS, NODE_REGION_CONFIG_FILE_OPTIONS)
